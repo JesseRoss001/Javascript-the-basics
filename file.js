@@ -26,3 +26,40 @@ console.log(e)
 
 f= f + "string";
 console.log(f)
+
+let text = "This is a quote 'is it ' \n A new line"
+console.log(text);
+
+
+var apple = " I come first";
+apple +="I come second";
+console.log(apple)
+
+let firstName = "Jesse"
+firstNameLength = firstName + ":" + firstName.length 
+console.log(firstNameLength)
+
+firstName1=firstName[0]
+console.log(firstName1)
+
+
+firstName2=firstName[firstName.length-1];
+console.log(firstName2)
+fullName=firstName + ` ` + surname
+fullNameLength=firstName.length+surname.length;
+console.log(fullName + `:` + fullNameLength)
+
+
+function minusSeven(num) {
+    return num - 7 ;
+}
+
+console.log(minusSeven(7));
+
+function timesFive(num) {
+    return num*5 ;
+
+}
+
+console.log(timesFive(10));
+
