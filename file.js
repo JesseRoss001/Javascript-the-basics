@@ -78,4 +78,25 @@ setInterval(function() {
 
 let hHeader = document.getElementById('h2-header');
 hHeader.innerHTML = " This is a java-script written header "; 
+document.getElementById('innerWidth').innerHTML = window.innerWidth;
+document.getElementById('innerHeight').innerHTML = window.innerHeight;
+document.getElementById('outerWidth').innerHTML = window.outerWidth;
+document.getElementById('outerHeight').innerHTML = window.outerHeight;
 
+document.getElementById('title').innerHTML = document.title;
+
+document.body.onload = function() {
+    console.log('We can call various methods of the body object as well, such as this one, body.onload, which gets called when loading is complete! Now we know that the body has been loaded!');
+}
+
+
+//paragraph notation as well grabbing by tag name 
+let firstParagraph = document.getElementsByTagName('p')[0];
+let numParagraphs = document.getElementsByTagName('p').length;
+let secondParagraph = document.getElementsByTagName('p').item(1);
+let specificParagraph = document.getElementsByTagName('p').namedItem('specific');
+
+console.log(firstParagraph);
+console.log(numParagraphs);
+console.log(secondParagraph);
+console.log(specificParagraph);
