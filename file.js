@@ -1,3 +1,8 @@
+console.log("%c Session one 16-10-2023 ", "color: red; font-weight: bold; font-size:30px ; ");
+console.log("%c====================================================================================================================================", "color: blue; font-weight: bold;");
+
+console.log("Hello World ")
+
 var myName ="Jesse";
 
 let surname="Ross";
@@ -63,6 +68,10 @@ function timesFive(num) {
 
 console.log(timesFive(10));
 
+console.log("%c====================================================================================================================================", "color: blue; font-weight: bold;");
+console.log("%c Session Two 17-10-2023 ", "color: red; font-weight: bold; font-size:30px ; ");
+console.log("%c====================================================================================================================================", "color: blue; font-weight: bold;");
+console.log("working in the code institute LMS learning basic javascript ")
 /** 
  * This is a timer that updates H1 for each second since the page has been uploaded 
  * NTS parseInt coverts the string into a number 
@@ -77,6 +86,12 @@ setInterval(function() {
     timerElement.innerHTML =currentTime; },1000); 
 
 let hHeader = document.getElementById('h2-header');
+
+console.log("%c============================================", "color: red; font-weight: bold;");
+console.log("%c====================================================================================================================================", "color: blue; font-weight: bold;");
+console.log("%c Session Three 18-10-2023 ", "color: red; font-weight: bold; font-size:30px ; ");
+console.log("%c====================================================================================================================================", "color: blue; font-weight: bold;");
+
 hHeader.innerHTML = " This is a java-script written header "; 
 document.getElementById('innerWidth').innerHTML = window.innerWidth;
 document.getElementById('innerHeight').innerHTML = window.innerHeight;
@@ -95,8 +110,10 @@ let firstParagraph = document.getElementsByTagName('p')[0];
 let numParagraphs = document.getElementsByTagName('p').length;
 let secondParagraph = document.getElementsByTagName('p').item(1);
 let specificParagraph = document.getElementsByTagName('p').namedItem('specific');
+let allParagraphs = document.getElementsByTagName('p');
 
 console.log(firstParagraph);
 console.log(numParagraphs);
 console.log(secondParagraph);
 console.log(specificParagraph);
+console.log(allParagraphs); 
