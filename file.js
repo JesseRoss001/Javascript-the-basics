@@ -63,3 +63,19 @@ function timesFive(num) {
 
 console.log(timesFive(10));
 
+/** 
+ * This is a timer that updates H1 for each second since the page has been uploaded 
+ * NTS parseInt coverts the string into a number 
+ * 
+ */
+setInterval(function() {
+    // setting a variable to the timer 
+    let timerElement = document.getElementById('timer');
+    // 
+    let currentTime = parseInt(timerElement.innerHTML);
+    currentTime ++;
+    timerElement.innerHTML =currentTime; },1000); 
+
+let hHeader = document.getElementById('h2-header');
+hHeader.innerHTML = " This is a java-script written header "; 
+
