@@ -158,3 +158,14 @@ let theGreenTeam=document.getElementsByClassName("green");
 for (let a=0 ; a < theGreenTeam.length; a++) {console.log("I am teamMember :"+ a + "," + theGreenTeam[a] + "AKA" + theGreenTeam[a].textContent)}
 let greenbean =document.getElementById("greenbean");
 console.log("They call me the team leader of the Green Team ." +theGreenTeam.namedItem('greenbean') + "my name is " + greenbean.textContent);
+
+console.log("%c============================================", "color: red; font-weight: bold;");
+
+let article = document.querySelector("article");
+let z = 0;
+
+while (z < article.children.length) {
+  console.log(
+    article.children[z].textContent);
+  z++; } 
+
