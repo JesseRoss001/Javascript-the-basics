@@ -110,4 +110,45 @@ console.log(getComputedStyle(inputPadding).padding);
 console.log(getComputedStyle(inputPadding).color);
 
 
+console.log("%c document.write()", "color: red; font-weight: bold; font-size:30px ; ");
+
+
+function replace() {
+    document.write('<h1>Hello!</h1>');
+    document.write("Today is ", Date());
+    document.write('<p>Each call to <code>document.write()</code> is appended in order to the document, without newlines.</p>');
+    document.write('<p>Notice the css for the &lt;code&gt; tag isn\'t working anymore...</p>');
+    document.write('<p>That\'s because the whole document was replaced, including the link to the css file!</p>');
+
+    document.write('The calls above are on new lines because they\'re writing paragraphs and headings. If writing plaintext...');
+    document.write('notice that this method will NOT append a new line after each statement.');
+    document.write('<br><br>To do that, you can use break tags');
+}
+
+console.log("%c challenge document.write()", "color: red; font-weight: bold; font-size:30px ; ");
+let newH2 = document.getElementById("h2-rewrite");
+newH2.innerHTML = "is this replacing";
+newH2.innerHTML += "Yup" ;
+
+document.getElementById("getanwer-button").addEventListener("click", function() {
+    function getAnswer() {
+        let element = document.querySelector(".re-write");
+
+        if (element) {
+            element.innerHTML = '<h2>Is this what you are looking for?</h2>';
+            element.innerHTML += '<h4>TOO BAD IT WAS A TRAP</h4>';
+        }
+    }
+
+    getAnswer(); // Call the getAnswer function when the button is clicked
+});
+
+
+
+
+
+
+
+
+
 
