@@ -143,9 +143,29 @@ document.getElementById("getanwer-button").addEventListener("click", function() 
     getAnswer(); // Call the getAnswer function when the button is clicked
 });
 
+console.log("%c Replacing html and styling it ", "color: red; font-weight: bold; font-size:30px ; ");
+
+function update() {
+    let box = document.getElementById('main-box');
+    box.style.width = "300px";
+
+    let paragraph = document.getElementsByClassName('special')[0];
+    paragraph.removeAttribute('class');
+
+    let emptyBox = document.getElementById('empty-box');
+    emptyBox.innerHTML = "<h2>I'm not empty anymore!</h2>"
+    emptyBox.style.width = "300px";
+    emptyBox.style.backgroundColor = "yellow";
+}
 
 
-
+console.log("%c Challenge  Replacing html and styling it ", "color: red; font-weight: bold; font-size:30px ; ");
+function turnOff() {let switch1 = document.getElementById("switch");
+if(switch1.textContent === "ON" 
+) {
+switch1.style.backgroundColor="red";
+switch1.textContent = " OFF"} else {switch1.style.backgroundColor="green";
+switch1.textContent = "ON"}}
 
 
 
