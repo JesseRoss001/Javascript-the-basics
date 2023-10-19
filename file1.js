@@ -20,6 +20,10 @@ let ingredientList = ingredientsDiv.children[0];
 console.log(ingredientList);
 
 // Now we can get its children and iterate though them:
+console.log("%c Session Four 19-10-2023 ", "color: red; font-weight: bold; font-size:30px ; ");
+console.log("%c====================================================================================================================================", "color: blue; font-weight: bold;");
+
+
 let allIngredients = ingredientList.children;
 for(let i = 0; i < allIngredients.length; i++) {
     console.log('Ingredient', i, 'is', allIngredients[i].textContent);
@@ -38,3 +42,22 @@ console.log('Footer text is:', footerText);
 // Of course, since it has an id, you can also do this to access it directly
 footerText = document.getElementById('footer-div').children[0].textContent;
 console.log('Footer text (alternative method) is:', footerText);
+
+
+
+console.log("%c Practice Children + Parent + Sibling ", "color: red; font-weight: bold; font-size:30px ; ");
+
+
+let theBigOne = document.getElementById("main1");
+let header = main1.children[0] ;
+console.log("1" + header + header.textContent); 
+console.log("2" + header.nextElementSibling + header.nextElementSibling.textContent); 
+
+let iteration =document.getElementById("iterate-elements");
+let theChildren = iteration.children;
+let a = 0 ; 
+
+for (let a = 0; a < theChildren.length; a++) {
+    console.log(a +  theChildren[a].textContent);
+}
+
