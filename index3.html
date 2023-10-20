@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Weather Report</title>
+</head>
+<body>
+    <h3>Weather Report</h3>
+    <button onclick="todayReport()">Today</button>
+    <button onclick="tomorrowReport()">Tomorrow</button>
+    <div id="report"></div>
+
+    <script>
+        function todayReport() {
+            let reportToday = document.getElementById('report');
+            let reportContent = `
+                <h4>Today</h4>
+                <p>Scattered thunderstorms</p>
+                <ul>
+                    <li>Temp: 29°C</li>
+                    <li>Precipitation: 25%</li>
+                    <li>Humidity: 58%</li>
+                    <li>Wind: 16km/h</li>
+                </ul>`;
+            reportToday.innerHTML = reportContent;
+        }
+
+        function tomorrowReport() {
+            let reportTomorrow = document.getElementById('report');
+            let reportContent = `
+                <h4>Tomorrow</h4>
+                <p>Partly cloudy</p>
+                <ul>
+                    <li>Temp: 27°C</li>
+                    <li>Precipitation: 20%</li>
+                    <li>Humidity: 65%</li>
+                    <li>Wind: 13km/h</li>
+                </ul>`;
+            reportTomorrow.innerHTML = reportContent;
+        }
+    </script>
+</body>
+</html>
